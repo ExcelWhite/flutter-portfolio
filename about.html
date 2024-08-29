@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div 
+            class="logo"
+            onclick="location.href='./'"
+        >
+            Enefu Elisha
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./#projects">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="./#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Enefu Elisha</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="./#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="./#contact" onclick="toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="about">
+        <div class="section">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./assets/experience.png" alt="experience icon" class="icon">
+                            <h3>Experience</h3>
+                            <p>1 year <br/>Flutter Mobile App Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="education icon" class="icon">
+                            <h3>Education</h3>
+                            <p>Final year student <br/>Informatics and Computer Engineering<br/>ITMO University, Saint Petersburg, Russia</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            I have developed strong programming skills in Flutter (dart), Java, and JavaScript. 
+                            My education at ITMO University has equipped me with resilience, focus, and excellent 
+                            organizational abilities, enabling me to efficiently manage project workflows and 
+                            consistently deliver high-quality results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+            onclick="location.href='./#contact'"/> -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #experience, 
+    .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, 
+    .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    .section,
+    .section-container {
+        height: fit-content;
+    }
+    .section{
+        margin: 0 5%;
+    }
+    .section__pic-container {
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+
+    .kiddiegram-project {
+        height: fit-content;
+    }
+    .kiddiegram {
+        display: flex;
+        flex-direction: column;
+    } 
+    .kiddiegram__level1__div {
+        max-width: 100%;
+    }
+
+    .scheduly-project {
+        height: fit-content;
+    }
+    .scheduly {
+        display: flex;
+        flex-direction: column;
+    } 
+    .scheduly__level1__div {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .kiddiegram-btn, .scheduly-btn {
+        margin-top: 1rem;
+        align-self: center;
+        font-size: 0.7rem;
+    }
+
+    .kiddiegram-description-outer-container, .scheduly-description-outer-container {
+        align-self: center;
+    }
+
+    .project-description-outer-container h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .project-description p, li {
+        font-size: 1rem;
+        font-weight: bold;
+        padding-left: 0.5rem;
+        list-style: none;
+    }
+
+    .project-features-and-implementations {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .project-vid-container iframe {
+        width: 280px;
+        height: 615px;
+    }
+
+    @keyframes dependencies_anim {
+        from {
+            transform: translateX(0)
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .dependencies-list{
+        display: flex;
+        padding: 1rem;
+        animation: 8s dependencies_anim infinite linear;
+    }
+    
+    
+    
+}
+
+@media screen and (max-width: 900px) {
+    .contact-info-upper-container {
+        margin: 0 5rem;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .contact-info-upper-container {
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    #contact,
+    footer {
+        height: 40vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+        flex-wrap: wrap;
+    }
+    .about-containers{
+        flex-direction: column;
+    }
+    .contact-info-container {
+        margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links  li a {
+        font-size: 1rem
+    }
+    .experience-sub-title {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+        
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container {
+        text-align: justify;
+    }
+
+
+
+}

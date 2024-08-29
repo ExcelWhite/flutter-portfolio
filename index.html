@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div 
+            class="logo"
+            onclick="location.href='./'"
+        >
+            Enefu Elisha
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"> Enefu Elisha</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="experience.html" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Elisha's profile picture" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm </p>
+            <h1 class="title">Enefu Elisha</h1>
+            <p class="section__text__p2">Flutter Mobile App Developer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/flutter-resume.pdf')"
+                >
+                    Download CV
+                </button>
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                >
+                    Contact info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="my linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/elisha-enefu-522010285/'"/>
+                <img src="./assets/github.png" alt="my github profile"
+                class="icon" onclick="location.href='https://github.com/ExcelWhite'">
+                
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="kiddiegram-project">
+        <div class="section kiddiegram">
+            <div class="kiddiegram__level1__div">
+                <h1 class="title kiddiegram-title"> Kiddiegram</h1>
+                <div class="kiddiegram-description-outer-container project-description-outer-container">
+                    <div class="project-description kiddiegram-description">
+                        <div class="project-idea">
+                            <h2>Project Idea</h2>
+                            <p>
+                                Ever thought of a social media platform that's safe for kids? <br>
+                                Kiddiegram, a social media platform designed for kids to share
+                                their experiences, photos and videos with their family and friends.
+                            </p>
+                        </div>
+                        <div class="project-features-and-implementations">
+                            <div class="project-features">
+                                <h2>Features</h2>
+                                <ul>
+                                    <li># Secure signup and authentication using Appwrite</li>
+                                    <li># Profile creation and management</li>
+                                    <li># Profile Management</li>
+                                    <li># Real-time access to database</li>
+                                    <li># Post, Feed and like system</li>
+                                    <li># Search system</li>
+                                    <li># Notification system</li>
+                                    <li># Custom Themes</li>
+                                </ul>
+                            </div>
+                            <div class="project-implementations">
+                                <div>
+                                    <h2 class="project-description-title">Technical Implementations</h2>
+                                    <ul>
+                                        <li># Flutter for Frontend</li>
+                                        <li># Appwrite for Backend</li>
+                                        <li># Appwrite for Database</li>
+                                    </ul>
+                                </div>
+                                <button 
+                                    class="btn btn-color-1 kiddiegram-btn"
+                                    onclick="window.open('https://github.com/ExcelWhite/kiddiegram/tree/master', '_blank');"
+                                >
+                                    Go to Github
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-dependencies-container">
+                        <h2>Dependencies</h2>
+                        <div class="dependencies-list-wrapper kiddiegram-dependencies-list-wrapper">
+                            <div class="dependencies-list kiddiegram-dependencies-list">
+                                <p class="dependency-item">http</p>
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">appwrite</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">flutter_local_notifications</p>
+                                <p class="dependency-item">permission_handler</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">video_player</p>
+                                <p class="dependency-item">video_thumbnail</p>
+                                <p class="dependency-item">http</p>
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">appwrite</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">flutter_local_notifications</p>
+                                <p class="dependency-item">permission_handler</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">video_player</p>
+                                <p class="dependency-item">video_thumbnail</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-vid-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/0T_EnX83IoA" 
+                    frameborder="0" 
+                    allowfullscreen 
+                ></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="scheduly-project">
+        <div class="section scheduly">
+            <div class="scheduly__level1__div">
+                <h1 class="title scheduly-title"> Scheduly</h1>
+                <div class="scheduly-description-outer-container project-description-outer-container">
+                    <div class="project-description">
+                        <div class="project-idea">
+                            <h2>What is Scheduly?</h2>
+                            <p>
+                                Scheduly is a CRUD flutter mobile app in which you can arrange your schedules reflecting your day to day activities. <br>
+                                Scheduly is designed to be your personal assistant. The code shows an excellent way of dynamically handling model data while using complicated and fascinating widgets. <br>
+                                It is aimed to be personalised and upcoming updates include custom themes, notifications and tunes.
+                            </p>
+                        </div>
+                        <div class="project-features-and-implementations">
+                            <div class="project-features">
+                                <h2>Features</h2>
+                                <ul>
+                                    <li>Clock Timer</li>
+                                    <li>Dynamic model handling</li>
+                                    <li>CRUD system</li>
+                                    <li>Themes</li>
+                                    <li>Personalised Notification system (upcoming)</li>
+                                    <li>Search system (upcoming)</li>
+                                    <li>User authentication and database (upcoming)</li>
+                                    <li>Custom Themes (upcoming)</li>
+                                </ul>
+                            </div>
+                            <div class="project-implementations">
+                                <div>
+                                    <h2 class="project-description-title">Technical Implementations</h2>
+                                    <ul>
+                                        <li>Flutter for Frontend</li>
+                                        <li>Appwrite for Backend</li>
+                                        <li>Appwrite for Database</li>
+                                    </ul>
+                                </div>
+                                <button 
+                                    class="btn btn-color-1 scheduly-btn"
+                                    onclick="window.open('https://github.com/ExcelWhite/scheduly', '_blank');"
+                                >
+                                    Go to Github
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-dependencies-container">
+                        <h2>Dependencies</h2>
+                        <div class="dependencies-list-wrapper scheduly-dependencies-list-wrapper">
+                            <div class="dependencies-list scheduly-dependencies-list">
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">table_calendar</p>
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">table_calendar</p>
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">table_calendar</p>
+                                <p class="dependency-item">provider</p>
+                                <p class="dependency-item">shared_preferences</p>
+                                <p class="dependency-item">google_fonts</p>
+                                <p class="dependency-item">table_calendar</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-vid-container">
+                <iframe 
+                    width="400" 
+                    height="878"
+                    src="https://www.youtube.com/embed/teoLa_fyshI" 
+                    frameborder="0" 
+                    allowfullscreen 
+                ></iframe>
+            </div>
+        </div>
+    </section>
+    <section class="other-projects">
+        <div>
+            
+        </div>
+    </section>
+    <section id="contact">
+        <div class="section">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="./assets/email.png" alt="email icon" class="icon contact-icon email-icon">
+                    <p><a href="mailto:elishaenefu7@gmail.com">elishaenefu7@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/elisha-enefu-522010285/">Linkedin</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Enefu Elisha. All Rights Reserved</p>
+    </footer>
+    <button id="to-top" class="to-top">
+        <img src="./assets/arrow-up.png" alt="go to top">
+    </button>
+    <script src="script.js"></script>
+</body>
+</html>

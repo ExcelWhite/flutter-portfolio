@@ -1,0 +1,684 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'sans-serif';
+    background-color: #f0f0f0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/* TRANSITION */
+
+a, .btn {
+    transition: all 0.3s ease;
+}
+
+
+/* DESKTOP NAV */
+
+nav, 
+.nav-links{
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.nav-links li {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+/* HAMBURGER */
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display:  inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f0f0f0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+.hamburger-icon span:nth-child(2){
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* SECTIONS */
+
+.section{
+    height: 100vh;
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 85vh;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1{
+    text-align: center;
+}
+.section__text__p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover{
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) o.1rem solid;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+
+/* ABOUT SECTION */
+
+/* #about {
+    position: relative;
+} */
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem; 
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+/* EXPERIENCE SECTION */
+
+/* #experience {
+    position: relative;
+} */
+
+.experience-sub-title {
+    counter-reset: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article{
+    display: flex;
+    width: 14rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+article .icon {
+    cursor: default;
+}
+
+
+/* PROJECTS SECTION*/
+/* #projects {
+
+} */
+
+.color-container{
+    border-color: rgb(163,163,163);
+    background: rgb(250,250,250);
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border-color: rgb(163,163,163);
+}
+
+.project-vid-container {
+    border-radius: 2rem;
+    align-content: center; 
+}
+.project-vid-container iframe {
+    width: 400px;
+    height: 878px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 2rem;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 1);
+}
+
+.project-description {
+    padding: 1.5rem;
+}
+
+.project-description-outer-container h2 {
+    font-size: 2.5rem;
+}
+.project-description p, li {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    list-style: none;
+}
+
+
+.project-features-and-implementations {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-implementations {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+}
+
+.project-dependencies-container {
+    text-align: center;
+    position: relative;
+}
+
+.dependencies-list-wrapper {
+    overflow: hidden;
+    /* width: 100%; */
+    border-radius: 0 0 2rem 2rem;
+    white-space: nowrap;
+    
+    /* margin-bottom: 1rem; */
+}
+
+.dependencies-list{
+    display: flex;
+    padding: 1rem;
+    animation: 20s dependencies_anim infinite linear;
+}
+
+.dependencies-list-wrapper:hover .dependencies-list {
+    animation-play-state: paused;
+    
+} 
+
+.dependencies-list p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 2rem;
+    margin: 0 40px;
+    cursor: default;
+}
+
+.dependency-item {
+    display: inline-block;
+    margin: 0 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+@keyframes dependencies_anim {
+    from {
+        transform: translateX(0)
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+/* KIDDIEGRAM */
+.kiddiegram-project {
+    background-image: url('./assets/kiddiegram-bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.kiddiegram{
+    display: flex;
+    justify-content: space-between;
+}
+
+.kiddiegram__level1__div {
+    max-width: 70%;
+}
+
+.kiddiegram-description-outer-container {
+    gap: 2rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* margin-right: 3rem; */
+    background: rgba(255, 111, 97, 0.5);
+    border-radius: 2rem;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 1);
+}
+
+.kiddiegram-description-outer-container p, h2, li {
+    color: white;
+}
+
+.kiddiegram-title {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 5rem;
+    color: #ff6f61;
+}
+
+.kiddiegram-dependencies-list-wrapper{
+    background: #e6e6fa;
+}
+.kiddiegram-dependencies-list p {
+    color: #ff6f61;
+}
+
+.kiddiegram-btn {
+    margin-top: 3rem;
+    margin-right: 2rem;
+    align-self: flex-end;
+    font-size: 0.9rem;
+}
+
+/* SCHEDULY SECTION */
+.scheduly-project {
+    background-image: url('./assets/scheduly_bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 105vh;
+}
+
+.scheduly{
+    display: flex;
+    justify-content: space-between;
+}
+
+.scheduly__level1__div {
+    max-width: 70%;
+}
+
+.scheduly-description-outer-container {
+    gap: 2rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    /* margin-right: 3rem; */
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2rem;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 1)
+}
+.scheduly-description-outer-container p, h2, li {
+    color: white;
+    /* font-family: 'Cabin', sans-serif; */
+}
+.scheduly-title {
+    font-family: 'Cabin', sans-serif;
+    font-size: 5rem;
+    color: white;
+}
+
+.scheduly-dependencies-list-wrapper{
+    background: #e91e63;
+}
+
+.scheduly-dependencies-list p {
+    color: white;
+}
+
+.scheduly-btn {
+    margin-top: 3rem;
+    margin-right: 2rem;
+    align-self: flex-end;
+    font-size: 0.9rem;
+}
+
+/* KIDDIEGRAM AND SCHEDULY TOGETHER */
+.kiddiegram-project,
+.kiddiegram-description-outer-container,
+.kiddiegram-dependencies-list-wrapper,
+.kiddiegram-dependencies-list {
+  font-family: 'Baloo 2', sans-serif;
+}
+
+.kiddiegram-btn {
+  font-family: 'Poppins', sans-serif; /* override font family for the button */
+}
+
+.scheduly-project,
+.scheduly-description-outer-container,
+.scheduly-dependencies-list-wrapper,
+.scheduly-dependencies-list {
+  font-family: 'Cabin', sans-serif;
+}
+
+.scheduly-btn {
+  font-family: 'Poppins', sans-serif; /* override font family for the button */
+}
+
+/* CONTACT SECTION */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+    margin: 2rem 10rem;
+    padding: 0.5rem;
+}
+
+.contact-info-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+    
+}
+
+.email-icon {
+    height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer{
+    height:26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    background: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+  
+.to-top img {
+    width: 50px;
+    height: 50px;
+}
+
+/* .to-top:hover {
+    transform: scale(1.2);
+}
+
+.to-top:hover img {
+    width: 60px;
+    height: 60px;
+} */
